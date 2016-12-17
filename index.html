@@ -1,5 +1,10 @@
 <html>
   <head>
+  </head>
+  <body>
+    <div class="main">
+      Today is day <span id="dayX"></span> in Trump's America.
+    </div>
     <script>
       var doomsday = new Date(2016,10,08);
       var today = new Date();
@@ -7,10 +12,5 @@
       var dayX = Math.floor((today.getTime() - doomsday.getTime()) / aDay)
       document.querySelector('#dayX').innerHTML = dayX;
     </script>
-  </head>
-  <body>
-    <div class="main">
-      Today is day <span id="dayX"></span> in Trump's America.
-    </div>
   </body>
 </html>
